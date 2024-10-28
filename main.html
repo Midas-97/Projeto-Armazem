@@ -1,0 +1,59 @@
+<!--Estrutua Básica: Incluímos a estrutara básica do HTML,
+começando com a declaração <!DOCTYPE html> e a definição da 
+LANG como pt-BR-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <!--Link para o CSS externo-->
+    <meta charset="UTF-8">
+    <meta nae="viewport" content="width=device-width,initial-scale=1.0">    
+
+    <!--Titulo: O titulo da página é "inventário de Produtos -
+    Donnana Restaurante", que aparecerá na aba do navegador-->
+    <title>Inventário de Produtos - Donnana Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<boby>
+    <h1>Inventário de Produtos</h1>
+
+    <!-- Seção para Adicionar Produtos-->
+     <!--Seção Adicionar Produto (Nesta Seção, criamos uma area
+     com inputs para o nome do produto, quantidade inicial eo
+     link da foto)
+     (Cada campo pussui um label associado para indicar o que deve
+     ser preenchido)-->
+<div id="adicionar-produto">
+    <h2>Adicionar Novo Produto</h2>
+    
+    <label for="nome">Nome do Produto:</label>
+    <input type="text" id="nome" placeholder="Digite o nome do produto">
+    
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" placeholder="Quantidade inicial" min="1">
+    
+    <label for="foto">Link da Foto:</label>
+    <input type="url" id="foto" placeholder="URL da imagem">
+
+    <!--(o botão adicionar produto será usado para enviar essas informações 
+     para a lista de produtos)-->
+     <button id="adicionar-btn">Adicionar Produto</button>
+</div>
+
+<!--Seção para Mostrar Produtos-->
+<!--Esta é uma seção que inicialmente etará vazia. Iremos preenche-la
+dinamicamente sando JavaScript para mostrar cada produto adicionado-->
+<!--O id="lista-produto" será essencial para adicionar o produtos
+diretamente nesta área mais tarde-->
+<div id="lista-produtos">
+    <h2>Lista de Produtos</h2>
+    <!--Produtos serão adicionados adinamicamente aqui-->
+</div>
+<script src="script.js"></script>
+
+<div id="produtos-container">
+    <!-- Produtos serão adicionados dinamicamente aqui -->
+</div>
+</boby>
+</html>

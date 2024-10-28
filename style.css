@@ -1,0 +1,167 @@
+/* Resetando margens e espaçmentos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 1. RESET BASICO: O seletor universal * é usado para redefinir as margens e
+preenchimento de todos os elementos e para configurar o box-sizing:
+border-box, o que facilita o controle de espaçamento e dimensões; */
+
+/* 2. ESTILO GRAIS DO BODY: (Definimos uma fonte padrao e uma cor de fundo para
+a página) (Centralizamos os elementos usado display: flex e align-items: center.) */
+
+/* 3. TITULO PRINCIPAL (H1) A cor e o espaçamento são ajustados para dar
+destaque ao titulo. */
+
+/* Estilo Geral */
+body {
+    font-family: arial, sans-serif;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* 4. SEÇÂO DE ADICIONAR PRODUTO: (#adicionar-produto: deinimos um fundo branco, borda
+e arredondamento dos cantos para que a area de adicionar produtos tenha
+um visual agradavel e separado do restante da página.)
+(iputs e botão) / (1. Os inputs são estalizados para ocupar toda a largura disponivel e tem um padding
+para melhorar a usabilidade / 2. O botão #dicionar-btn recebe uma co verde para
+se destacar, mudando de cor quando passa o mouse (hover), indicando interatividade) */
+
+/* Seção de Adicionar Produtos */
+#adicionar-produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#adicionar-produto h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#adicionar-produto label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#adicionar-produto input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#adicionar-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#adicionar-btn :hover {
+    background-color: #218838;
+}
+
+/* 5. SEÇÂO DE LISTA DE PRODUTO: (1. .produto-item: cada produto terá um bloco com uma imagem
+á esquerda, seguinda pelo nome e quantidade. / 2. imagem: ajustams a imagem para ter 50x50px e
+adicionamos um pequeno arredondamento para mehorar a aparencia.) */
+
+/* Seção de lista de produtos */
+#lista-produtos {
+    width: 100%;
+    max-width: 600px;
+    color: #fff;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+#produtos-container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as caixas dos produtos */
+    overflow-x: auto; /* Permite rolagem horizontal, se necessário */
+    padding: 10px;
+    border-top: 2px solid #ddd; /* Linha separadora abaixo do título */
+    margin-top: 10px;
+}
+
+.produto-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.produto-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.produto-info {
+    flex-grow: 1;
+}
+
+.produto-info p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* 6. BOTÂO DE REMOVER E EXCLUIR: Os botões . botao-sair e .botao-exluir recebem cores chamativas
+(amarelo para reduzir a quantidade e vermelho para excluir) e mudam de cor no hocer para reforçar
+a interatividade.) */
+
+/* Seção de botões */
+.botao-sair, .botão-excluir {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botao-sair {
+    background-color: #ffc107;
+    margin-right: 10px;
+}
+
+.botao-sair :hover {
+    background-color: #e0a800;
+}
+
+.botão-excluir {
+    background-color: #dc3545;
+}
+
+.botão-excluir :hover {
+    background-color: #c82333;
+}
